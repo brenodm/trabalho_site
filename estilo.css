@@ -1,0 +1,144 @@
+:root {
+    --cor-primaria: #ADD8E6;   /* Azul claro */
+    --cor-secundaria: #87CEFA; /* Azul céu */
+    --cor-destaque: #4682B4;   /* Azul aço */
+    --cor-fundo: #F0F8FF;      /* Azul muito claro */
+    --cor-texto: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-secundaria);
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.titulo-site {
+    color: var(--cor-texto);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Menu */
+.menu-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.conteudo-box {
+    background-color: white;
+    padding: 25px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.foto-breno {
+    background-color: white;
+    padding: 25px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.foto {
+    background-color: white;
+    max-width: 500px;
+    width: 70%;
+    border-radius: 360px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: var(--cor-destaque);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #3a6f9b; /* tom mais escuro do azul aço */
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-destaque);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
